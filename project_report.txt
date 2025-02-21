@@ -1,0 +1,87 @@
+House Price Prediction Project Report
+
+1. Introduction
+The House Price Prediction project aims to develop a machine learning model to predict house prices based on various features such as square footage, number of bedrooms and bathrooms, and other relevant attributes. The model was built using Ridge Regression and deployed with a Flask-based web application.
+
+2. Objectives
+
+	To analyze housing data and extract meaningful insights.
+
+	To build a predictive model for estimating house prices.
+
+	To develop a user-friendly web application for easy interaction.
+
+	To implement feature engineering and regularization techniques for improved accuracy.
+
+3. Dataset
+
+	The dataset consists of various house attributes such as GrLivArea, BedroomAbvGr, FullBath, HalfBath, TotalBsmtSF, YearBuilt, and YrSold.
+
+	The data was split into training and validation sets for model training.
+
+	Preprocessing steps included handling missing values, feature engineering, and data scaling.
+
+4. Data Preprocessing
+
+	Missing values were imputed using appropriate statistical methods.
+
+	New features were created, such as TotalBathrooms, TotalSF, and HouseAge.
+
+	Standardization was applied using StandardScaler to ensure all numerical features had similar ranges.
+
+5. Model Selection & Training
+
+	Ridge Regression was selected to handle multicollinearity in the dataset.
+
+	Hyperparameter tuning was performed to determine the best alpha value.
+
+	The model was trained and evaluated using the R-squared score.
+
+	Final R-squared score obtained: 0.75
+
+6. Web Application Development
+
+	The trained model was saved using pickle for deployment.
+
+	Flask was used to create a simple web interface with two pages:
+
+	index.html: Allows users to input house features.
+
+	result.html: Displays the predicted house price.
+
+C	SS styles and background images were used to enhance the UI.
+
+7. Challenges Faced
+
+	Handling missing values and inconsistent dataset features.
+
+	Fixing feature mismatch issues while using StandardScaler.
+
+	Ensuring a smooth user experience with a well-structured frontend.
+
+8. Results & Conclusion
+
+	The model provides a fairly accurate prediction of house prices.
+
+	Feature engineering significantly improved performance.
+
+	The web app allows users to easily input values and get price predictions.
+
+	Further improvements could include adding more features and testing other regression models.
+
+9. Future Enhancements
+
+	Deploying the application online using platforms like Heroku or AWS.
+
+	Experimenting with other models like Random Forest or XGBoost.
+
+	Enhancing the UI with more interactive features.
+
+10. References
+
+	Scikit-learn documentation
+
+	Flask official documentation
+
+	Kaggle housing datasets
+
